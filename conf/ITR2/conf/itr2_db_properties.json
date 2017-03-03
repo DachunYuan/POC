@@ -1,0 +1,6 @@
+{
+    "jdbcUrl": "jdbc:oracle:thin:@g1u2115.austin.hp.com:1525:ITRD",
+    "user": "INFR",
+    "password": "4.!INFRitr2DEVpw_20160504",
+    "driver": "oracle.jdbc.driver.OracleDriver"
+}

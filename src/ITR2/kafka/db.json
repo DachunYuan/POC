@@ -1,0 +1,8 @@
+{ 
+"ITR2_DEV": [
+{"user": "INFR", "password": "4.!INFRitr2DEVpw_20160504", "jdbc": "jdbc:oracle:thin:@g1u2115.austin.hp.com:1525:ITRD", "db": "ITRD"}
+],
+"HPSM_PRO": [
+{"user": "HPSM_ODS_RO", "password": "oprpt!Usr894Feb", "jdbc": "jdbc:oracle:thin:@gcu12022.austin.hp.com:1526:ITSMP", "db": "ITSMP"}
+]
+}

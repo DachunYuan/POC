@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+-->
+<configuration>
+<!---->
+  <property>
+      <name>javax.jdo.option.ConnectionURL</name>
+      <value>jdbc:mysql://16.250.37.241:3306/metastore?createDatabaseIfNotExist=true</value>
+      <description>JDBC connect string for a JDBC metastore</description>
+  </property>
+
+  <property>
+      <name>javax.jdo.option.ConnectionDriverName</name>
+      <value>com.mysql.jdbc.Driver</value>
+      <description>Driver class name for a JDBC metastore</description>
+  </property>
+<!--
+  <property>
+	<name>javax.jdo.option.ConnectionURL</name>
+	<value>jdbc:oracle:thin:@g1u2115.austin.hp.com:1525:ITRD</value>
+        <description>JDBC connect string for a JDBC metastore</description>
+  </property>
+  <property>
+	<name>javax.jdo.option.ConnectionDriverName</name>
+       	<value>oracle.jdbc.driver.OracleDriver</value>
+        <description>Driver class name for a JDBC metastore</description>
+  </property>
+-->
+  <property>
+      <name>javax.jdo.option.ConnectionUserName</name>
+      <value>hadoop</value>
+  </property>
+
+  <property>
+      <name>javax.jdo.option.ConnectionPassword</name>
+      <value>hadoop</value>
+  </property>
+<!--
+<property>
+	<name>javax.jdo.option.ConnectionUserName</name>
+	<value>INFR</value>
+</property>
+   
+<property>
+	<name>javax.jdo.option.ConnectionPassword</name>
+	<value>4.!INFRitr2DEVpw_20160504</value>
+</property>
+
+<property>
+    <name>hive.metastore.try.direct.sql</name>
+    <value>false</value>
+</property>
+<property>
+    <name>hive.metastore.direct.sql.batch.size</name>
+    <value>0</value>
+</property>
+<property>
+     <name>hive.metastore.try.direct.sql.ddl</name>
+     <value>false</value>
+</property>
+
+<property>
+        <name>hive.stats.dbclass</name>
+        <value>jdbc:Oracle</value>
+</property>
+<property>
+        <name>hive.stats.jdbcdriver</name>
+        <value>Oracle.jdbc.driver.OracleDriver</value>
+</property>
+-->
+<property>
+<name>hive.execution.engine</name>
+<value>spark</value>
+</property>
+
+  <property>
+    	<name>hive.metastore.warehouse.dir</name>
+    	<value>/usr/hive/warehouse</value>
+  </property>
+
+  <property>
+	<name>hive.hwi.war.file</name>
+	<value>/lib/hive-hwi-0.11.0.war</value>
+	<description>This is the WAR file with the jsp content for Hive Web Interface</description>
+  </property>
+</configuration>

@@ -1,0 +1,18 @@
+<coordinator-app xmlns = "uri:oozie:coordinator:0.2" name =
+   "coord_test" frequency="${coord:minutes(45)}"
+  start="2017-02-10T06:00Z" end="2017-02-26T23:25Z" timezone="GMT">
+
+   <controls>
+      <timeout>1</timeout>
+      <concurrency>1</concurrency>
+      <execution>FIFO</execution>
+      <throttle>1</throttle>
+   </controls>
+
+   <action>
+      <workflow>
+         <app-path>${workflow_xml}</app-path>
+      </workflow>
+   </action>
+
+</coordinator-app>
